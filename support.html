@@ -7,26 +7,29 @@
   <meta name="description" content="Support page for MathQuatro" />
   <style>
     :root {
-      --bg: #f7f9fc;
+      --bg: #f6f9ff;
       --card: #ffffff;
       --text: #1f2937;
       --muted: #6b7280;
-      --primary: #6d5efc;
+      --primary: #4f46e5;
       --border: #e5e7eb;
+      --accent: #eef2ff;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: linear-gradient(180deg, #f9fbff 0%, #eef4ff 100%);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.75;
     }
 
     .container {
-      max-width: 860px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 48px 20px;
     }
@@ -34,39 +37,66 @@
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 20px;
+      border-radius: 24px;
       padding: 32px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: 2rem;
-      line-height: 1.2;
-    }
-
-    h2 {
-      margin-top: 32px;
-      font-size: 1.2rem;
-    }
-
-    p {
-      margin: 12px 0;
-    }
-
-    .muted {
-      color: var(--muted);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
     }
 
     .badge {
       display: inline-block;
       padding: 6px 12px;
       border-radius: 999px;
-      background: #eef2ff;
+      background: var(--accent);
       color: var(--primary);
-      font-weight: 600;
-      font-size: 0.9rem;
-      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .note {
+      background: #fafbff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-top: 16px;
+    }
+
+    .contact-box {
+      background: #fafbff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      margin-top: 16px;
     }
 
     a {
@@ -78,48 +108,61 @@
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
     .footer {
-      margin-top: 24px;
-      font-size: 0.95rem;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
       color: var(--muted);
+      font-size: 0.95rem;
     }
 
-    .email-box {
-      margin-top: 16px;
-      padding: 14px 16px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: #fafafa;
-      font-weight: 600;
+    @media (max-width: 640px) {
+      .card {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="card">
-      <div class="badge">MathQuatro Support</div>
-      <h1>Need help with MathQuatro?</h1>
+    <main class="card">
+      <div class="badge">Support</div>
+      <h1>MathQuatro Support</h1>
+      <p class="muted">We’re here to help with questions, bug reports, and feedback.</p>
+
       <p>
-        Thank you for using MathQuatro. If you have any questions, encounter any issues,
-        or would like to send feedback, please contact us by email.
+        Thank you for using MathQuatro. If you experience any issues, have questions about the app,
+        or would like to share suggestions, please contact us using the information below.
       </p>
 
-      <div class="email-box">
-        Support Email:
-        <a href="mailto:tomwu1013@gmail.com">tomwu1013@gmail.com</a>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:tomwu1013@gmail.com">tomwu1013@gmail.com</a></p>
+        <p><strong>Support Page:</strong> <a href="https://ntuetom.github.io/MathQuatro/support.html">https://ntuetom.github.io/MathQuatro/support.html</a></p>
       </div>
 
-      <h2>When contacting support, please include:</h2>
+      <h2>How to Contact Support</h2>
+      <p>
+        When reaching out, please include as much detail as possible so we can help you faster.
+      </p>
       <ul>
         <li>Your device model</li>
         <li>Your iOS version</li>
-        <li>Your app version</li>
+        <li>Your MathQuatro app version</li>
         <li>A short description of the issue</li>
-        <li>Screenshots, if available</li>
+        <li>Screenshots or screen recordings, if available</li>
+      </ul>
+
+      <h2>Common Topics</h2>
+      <ul>
+        <li>App not opening or crashing</li>
+        <li>Ads not displaying correctly</li>
+        <li>Performance or lag issues</li>
+        <li>Visual or layout issues on certain devices</li>
+        <li>General feedback and feature suggestions</li>
       </ul>
 
       <h2>About MathQuatro</h2>
@@ -128,15 +171,32 @@
         practice addition, subtraction, multiplication, and division in a fun and interactive way.
       </p>
 
+      <div class="note">
+        <strong>Tip:</strong> Including your device model, iOS version, and app version will help us
+        investigate your issue more efficiently.
+      </div>
+
       <h2>Response Time</h2>
       <p>
-        We will do our best to respond as soon as possible.
+        We will do our best to respond as soon as possible. Response times may vary depending on
+        weekends, holidays, and the number of incoming support requests.
       </p>
 
-      <p class="footer">
-        © 2026 MathQuatro. All rights reserved.
+      <h2>Privacy</h2>
+      <p>
+        For information about how MathQuatro handles data, please review our
+        <a href="https://ntuetom.github.io/MathQuatro/privacy.html">Privacy Policy</a>.
       </p>
-    </div>
+
+      <div class="footer">
+        <p>MathQuatro</p>
+        <p>
+          Privacy Policy:
+          <a href="https://ntuetom.github.io/MathQuatro/privacy.html">https://ntuetom.github.io/MathQuatro/privacy.html</a>
+        </p>
+        <p>© 2026 MathQuatro. All rights reserved.</p>
+      </div>
+    </main>
   </div>
 </body>
 </html>
